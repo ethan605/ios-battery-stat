@@ -1,0 +1,321 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA3E740E1633E6D90061019E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3E740D1633E6D90061019E /* UIKit.framework */; };
+		AA3E74101633E6D90061019E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3E740F1633E6D90061019E /* Foundation.framework */; };
+		AA3E74121633E6D90061019E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3E74111633E6D90061019E /* CoreGraphics.framework */; };
+		AA3E74181633E6D90061019E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AA3E74161633E6D90061019E /* InfoPlist.strings */; };
+		AA3E741A1633E6D90061019E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3E74191633E6D90061019E /* main.m */; };
+		AA3E741E1633E6D90061019E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3E741D1633E6D90061019E /* AppDelegate.m */; };
+		AA3E74211633E6D90061019E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA3E74201633E6D90061019E /* ViewController.m */; };
+		AA3E74241633E6D90061019E /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA3E74221633E6D90061019E /* ViewController.xib */; };
+		AA3E744E1633F7960061019E /* libIOKit.A.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = AA3E744D1633F7960061019E /* libIOKit.A.dylib */; };
+		AA3E74521633FE060061019E /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = AA3E74511633FE060061019E /* icon.png */; };
+		AA3E74541633FE0C0061019E /* icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AA3E74531633FE0C0061019E /* icon@2x.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA3E74091633E6D90061019E /* battery-stat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "battery-stat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA3E740D1633E6D90061019E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AA3E740F1633E6D90061019E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AA3E74111633E6D90061019E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AA3E74151633E6D90061019E /* battery-stat-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "battery-stat-Info.plist"; sourceTree = "<group>"; };
+		AA3E74171633E6D90061019E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AA3E74191633E6D90061019E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AA3E741B1633E6D90061019E /* battery-stat-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "battery-stat-Prefix.pch"; sourceTree = "<group>"; };
+		AA3E741C1633E6D90061019E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AA3E741D1633E6D90061019E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AA3E741F1633E6D90061019E /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AA3E74201633E6D90061019E /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AA3E74231633E6D90061019E /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController.xib; sourceTree = "<group>"; };
+		AA3E744D1633F7960061019E /* libIOKit.A.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libIOKit.A.dylib; sourceTree = "<group>"; };
+		AA3E744F1633F7BC0061019E /* IOPowerSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOPowerSources.h; sourceTree = "<group>"; };
+		AA3E74501633F7BC0061019E /* IOPSKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOPSKeys.h; sourceTree = "<group>"; };
+		AA3E74511633FE060061019E /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		AA3E74531633FE0C0061019E /* icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon@2x.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA3E74061633E6D90061019E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3E740E1633E6D90061019E /* UIKit.framework in Frameworks */,
+				AA3E74101633E6D90061019E /* Foundation.framework in Frameworks */,
+				AA3E74121633E6D90061019E /* CoreGraphics.framework in Frameworks */,
+				AA3E744E1633F7960061019E /* libIOKit.A.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA3E73FE1633E6D90061019E = {
+			isa = PBXGroup;
+			children = (
+				AA3E74531633FE0C0061019E /* icon@2x.png */,
+				AA3E74511633FE060061019E /* icon.png */,
+				AA3E74131633E6D90061019E /* battery-stat */,
+				AA3E740C1633E6D90061019E /* Frameworks */,
+				AA3E740A1633E6D90061019E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA3E740A1633E6D90061019E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA3E74091633E6D90061019E /* battery-stat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA3E740C1633E6D90061019E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AA3E744D1633F7960061019E /* libIOKit.A.dylib */,
+				AA3E740D1633E6D90061019E /* UIKit.framework */,
+				AA3E740F1633E6D90061019E /* Foundation.framework */,
+				AA3E74111633E6D90061019E /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AA3E74131633E6D90061019E /* battery-stat */ = {
+			isa = PBXGroup;
+			children = (
+				AA3E744F1633F7BC0061019E /* IOPowerSources.h */,
+				AA3E74501633F7BC0061019E /* IOPSKeys.h */,
+				AA3E741C1633E6D90061019E /* AppDelegate.h */,
+				AA3E741D1633E6D90061019E /* AppDelegate.m */,
+				AA3E741F1633E6D90061019E /* ViewController.h */,
+				AA3E74201633E6D90061019E /* ViewController.m */,
+				AA3E74221633E6D90061019E /* ViewController.xib */,
+				AA3E74141633E6D90061019E /* Supporting Files */,
+			);
+			path = "battery-stat";
+			sourceTree = "<group>";
+		};
+		AA3E74141633E6D90061019E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AA3E74151633E6D90061019E /* battery-stat-Info.plist */,
+				AA3E74161633E6D90061019E /* InfoPlist.strings */,
+				AA3E74191633E6D90061019E /* main.m */,
+				AA3E741B1633E6D90061019E /* battery-stat-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA3E74081633E6D90061019E /* battery-stat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA3E74271633E6D90061019E /* Build configuration list for PBXNativeTarget "battery-stat" */;
+			buildPhases = (
+				AA3E74051633E6D90061019E /* Sources */,
+				AA3E74061633E6D90061019E /* Frameworks */,
+				AA3E74071633E6D90061019E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "battery-stat";
+			productName = "battery-stat";
+			productReference = AA3E74091633E6D90061019E /* battery-stat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA3E74001633E6D90061019E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+				ORGANIZATIONNAME = Vinova;
+			};
+			buildConfigurationList = AA3E74031633E6D90061019E /* Build configuration list for PBXProject "battery-stat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AA3E73FE1633E6D90061019E;
+			productRefGroup = AA3E740A1633E6D90061019E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA3E74081633E6D90061019E /* battery-stat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA3E74071633E6D90061019E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3E74181633E6D90061019E /* InfoPlist.strings in Resources */,
+				AA3E74241633E6D90061019E /* ViewController.xib in Resources */,
+				AA3E74521633FE060061019E /* icon.png in Resources */,
+				AA3E74541633FE0C0061019E /* icon@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA3E74051633E6D90061019E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA3E741A1633E6D90061019E /* main.m in Sources */,
+				AA3E741E1633E6D90061019E /* AppDelegate.m in Sources */,
+				AA3E74211633E6D90061019E /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AA3E74161633E6D90061019E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA3E74171633E6D90061019E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AA3E74221633E6D90061019E /* ViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AA3E74231633E6D90061019E /* en */,
+			);
+			name = ViewController.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AA3E74251633E6D90061019E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AA3E74261633E6D90061019E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA3E74281633E6D90061019E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv6,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "battery-stat/battery-stat-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "battery-stat/battery-stat-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/..\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AA3E74291633E6D90061019E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = (
+					"$(ARCHS_STANDARD_32_BIT)",
+					armv6,
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "battery-stat/battery-stat-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				INFOPLIST_FILE = "battery-stat/battery-stat-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 4.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)\"",
+					"\"$(SRCROOT)/..\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA3E74031633E6D90061019E /* Build configuration list for PBXProject "battery-stat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA3E74251633E6D90061019E /* Debug */,
+				AA3E74261633E6D90061019E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA3E74271633E6D90061019E /* Build configuration list for PBXNativeTarget "battery-stat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA3E74281633E6D90061019E /* Debug */,
+				AA3E74291633E6D90061019E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA3E74001633E6D90061019E /* Project object */;
+}
