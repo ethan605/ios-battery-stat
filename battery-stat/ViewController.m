@@ -8,8 +8,11 @@
 
 #import "ViewController.h"
 
+#define UPDATE_BATTERY_LEVEL_INTERVAL 30
+
 @interface ViewController ()
 
+- (void)startMonitorBattery;
 - (void)updateBatteryLevel;
 - (double)batteryLevel;
 
@@ -32,6 +35,13 @@
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
     return (interfaceOrientation == UIInterfaceOrientationPortrait ||
             interfaceOrientation == UIInterfaceOrientationPortraitUpsideDown);
+}
+
+- (void)startMonitorBattery {
+    [self updateBatteryLevel];
+    [self performSelector:@selector(startMonitorBattery)
+               withObject:nil
+               afterDelay:UPDATE_BATTERY_LEVEL_INTERVAL];
 }
 
 - (void)updateBatteryLevel {
@@ -87,10 +97,6 @@
         return percent; 
     }
     return -1.0f;
-}
-
-- (IBAction)btnUpdatePressed:(UIButton *)sender {
-    [self updateBatteryLevel];
 }
 
 @end

@@ -15,5 +15,4 @@
     NSString *powerSourceError;
 }
 
-- (IBAction)btnUpdatePressed:(UIButton *)sender;
 @end
