@@ -23,7 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self updateBatteryLevel];
+    [self startMonitorBattery];
 }
 
 - (void)viewDidUnload {
@@ -39,6 +39,10 @@
 
 - (void)startMonitorBattery {
     [self updateBatteryLevel];
+    
+    if ([lblBatteryLevel.text isEqualToString:@"N/A"])
+        return;
+    
     [self performSelector:@selector(startMonitorBattery)
                withObject:nil
                afterDelay:UPDATE_BATTERY_LEVEL_INTERVAL];
@@ -92,6 +96,8 @@
         psValue = CFDictionaryGetValue(pSource, CFSTR(kIOPSMaxCapacityKey));
         CFNumberGetValue((CFNumberRef)psValue, kCFNumberSInt32Type, &maxCapacity);
         
+        NSLog(@"---------");
+        NSLog(@"curCapacity = %d | maxCapacity = %d", curCapacity, maxCapacity);
         percent = ((double)curCapacity/(double)maxCapacity * 100.0f);
         
         return percent; 
